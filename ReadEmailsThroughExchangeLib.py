@@ -13,7 +13,6 @@ getaccount = Account("royson.oliver@igglobal.com",
 # dog = account.inbox.filter(subject='My new dog!')   #returns email with subject of 'My new dog!'
 # mike = account.inbox.filter(author='mike@hamburger.com')    #returns emails from your buddy Mike
 
-
 for item in getaccount.inbox.filter(is_read=False):
     print(item.subject)
     print(item.sender)
